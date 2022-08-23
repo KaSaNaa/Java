@@ -2,8 +2,6 @@ package IfElseElseif;
 
 import java.util.Scanner;
 
-import javax.print.event.PrintEvent;
-
 public class Ifconditions {
     public static void main(String[] args) {
         System.out.println("Enter name: ");
@@ -19,6 +17,7 @@ public class Ifconditions {
         }
 
         System.out.print("Enter your age: ");
+
         int age = sc.nextInt();
         sc.close(); // scannerVariable.close(); is used to close intput stream. if not IDE will show
                     // a resource leak.
