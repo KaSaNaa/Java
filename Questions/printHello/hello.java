@@ -9,5 +9,6 @@ public class hello {
         String name = NM.next();
         System.out.print("Hello ");
         System.out.println(name);
+        NM.close();
     }
 }
