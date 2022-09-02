@@ -5,6 +5,7 @@ import java.util.Scanner;
 class Rect {
     private float width, length, area;
     Scanner sc = new Scanner(System.in);
+    
 
     public void SetWidth() {
         System.out.println("Enter width: ");

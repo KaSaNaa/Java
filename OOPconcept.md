@@ -12,3 +12,4 @@ Bag             Bag         color, brand, price         store(), carry()
 *< never declare attributes under public label*
 
 ## Members in a class = number of methods + number of attributes
+
