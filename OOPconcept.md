@@ -9,3 +9,6 @@ Door            Door        color, length, width        open() ,close()
 TV              Telev       resolution, price, color    watch(), on(), hear()
 Bag             Bag         color, brand, price         store(), carry()
 
+*< never declare attributes under public label*
+
+## Members in a class = number of methods + number of attributes

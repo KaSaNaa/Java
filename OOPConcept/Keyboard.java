@@ -10,6 +10,7 @@ class Keyboard {
 class KeyMain {
     public static void main(String[] args) {
         Keyboard x = new Keyboard();
+        
         /* 
         *x.color = "Black";
         *System.out.print(x.color); 
