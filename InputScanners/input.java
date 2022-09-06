@@ -15,18 +15,17 @@ public class input {
 
         String scanned = sc.next(); // this stores the taken input in a string variable called "scanned".
         System.out.println("Enter number: ");
-        Scanner num = new Scanner(System.in);
-        int number = num.nextInt();
 
+        int number = sc.nextInt();
         // string to integer conversion
         System.out.println("Enter anything: ");
-        Scanner thing = new Scanner(System.in);
-        String THING = thing.next();
-        int x = Integer.parseInt(THING);
 
+        String THING = sc.next();
+        int x = Integer.parseInt(THING);
         System.out.println(scanned);
         System.out.println(number);
         System.out.println(x);
+        sc.close();
         // 38:42
 
     }
