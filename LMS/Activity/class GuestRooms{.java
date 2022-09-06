@@ -10,9 +10,6 @@ class GuestRooms {
     private static int resFee = 1000;
     Scanner sc = new Scanner(System.in);
 
-    public GuestRooms(int num, ) {
-        this.roomNum = num;
-    }
 
     public void setroomNum() {
         System.out.print("Enter room number: ");
@@ -33,7 +30,7 @@ class GuestRooms {
         this.days = days;
     }
 
-    private void CalTotal() {
+    public void CalTotal() {
         int Total = (FeeForDay * days) + resFee;
         this.roomIncome = Total;
         ShowIncome();
@@ -41,7 +38,7 @@ class GuestRooms {
     }
 
     private void ShowIncome() {
-        System.out.println("\t\t\tRoom Number " + roomNum + "\t\t\t");
+        System.out.println("\n\n\t\t\t------ Room Number " + roomNum + "------\t\t\t\n");
         System.out.println("Number of days reserved : " + days);
         System.out.println("Total charge for your reservation (including reservation fee) :" + roomIncome);
     }
@@ -50,9 +47,11 @@ class GuestRooms {
 
 class MainRoom {
     public static void main(String[] args) {
-        GuestRooms x = new GuestRooms(1);
+        GuestRooms x = new GuestRooms();
         x.setroomNum();
         x.SetFeeForDay();
+        x.SetDays();
+        x.CalTotal();
 
 
     }
