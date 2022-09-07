@@ -14,8 +14,8 @@ eg: C cannot represent real world objects. It only supports to represent behavio
         -Kotlin
 
 - once the installation is done, there will be 2 folders inside the Java Folder.
-        JDK--> Java Development Kit(contains development and Debugging Tools)
-        JRE--> Java Runtime Environment(provides the environment for the application to run. contains Java Virtual Machine, which supports to run the application)
+        JDK--> Java Development Kit (contains development and Debugging Tools)
+        JRE--> Java Runtime Environment (provides the environment for the application to run. contains Java Virtual Machine, which supports to run the application)
 
 ## JAVA
 - Intructions/codes are written on notepad
@@ -35,7 +35,8 @@ class Main // public, private, protected are access modifiers.
     }
 ```
 *public variables are like global variables in C*
-*. means = inside*
+  
+*'.' means = inside*
 
 
 
@@ -122,4 +123,8 @@ class Main{
         y.showDetails();
     }
 }
+<<<<<<< HEAD:README.md
 ```
+=======
+``` 
+>>>>>>> NOTEPAD:JAVAbasic.md
