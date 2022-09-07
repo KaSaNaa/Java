@@ -123,12 +123,8 @@ class Main{
         y.showDetails();
     }
 }
-<<<<<<< HEAD
-``` 
-=======
 <<<<<<< HEAD:README.md
 ```
 =======
 ``` 
 >>>>>>> NOTEPAD:JAVAbasic.md
->>>>>>> 8b2c368 (Squashed commit of the following:)
