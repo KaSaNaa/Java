@@ -123,8 +123,52 @@ class Main{
         y.showDetails();
     }
 }
-<<<<<<< HEAD:README.md
 ```
-=======
-``` 
->>>>>>> NOTEPAD:JAVAbasic.md
+# Association
+
+- Association in JAVA is a connection or relation between two seperate classes that are set up through their objects. (smh similar to Relationships in DBMS)
+
+- Composition (HAS-A) simply mean the use of instance variables that are references to other objects. For example Maruti has Engine, or House has Bathroom.
+
+    ## HAS-A Relationship/ Composition
+
+            Ex:
+            - A student has a module 
+            - A driver has a vehicle
+            - seller sells products
+
+
+    <img src= "https://media.geeksforgeeks.org/wp-content/uploads/20210119172523/HasARelationJavaExample.png">
+
+```java
+class Student {
+    private String name;
+    Module m1; // module class object created inside student class.
+    public Student(String name){
+        this.name = name;
+        m1 = new Module(30); // Association
+    }
+    public void showDetails(){
+        System.out.println("Name is " + name);
+        // System.out.println("Module duration =" + duration);
+        // (this line won't work as duration is a private attribute in another class)
+        System.out.println("Module duration is " + m1.getDuration() );
+    }
+} 
+class Module{
+    private int duration;
+    public Module(int duration){
+        this.duration = duration; // Association
+    }
+    public int getDuration(){
+        return duration;
+    }
+    
+}
+class Main{
+    public static void main(String[] args){
+
+    }
+}
+```
+
