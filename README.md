@@ -178,4 +178,3 @@ class Main{
             -  < BENEFITS OF INHERITANCE
             -  < DIFFERENCE BETWEEN INHERITANCE AND ASSOCIATION
             -  < MODELS OF INHERITANCE
-$$
