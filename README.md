@@ -56,13 +56,13 @@ Tbh, byte code acts like an intermediary code.
 
 ### 2022.08.26
 
---- MUST READ BEFORE NEXT DAY - Definitions of      *< CLASS
-                                                    < ATTRIBUTES
-                                                    < METHOD
-                                                    < PRIVATE LABEL and PUBLIC ACCESSS LABEL
-                                                    < INSTANCE
-                                                    < INSTANCE MEMBER and STATIC MEMBER
-                                                    < CONSTRUCTORS AND INSTRUCTORS*
+     MUST READ BEFORE NEXT DAY - Definitions of     - CLASS
+                                                    - ATTRIBUTES
+                                                    - METHOD
+                                                    - PRIVATE LABEL and PUBLIC ACCESSS LABEL
+                                                    - INSTANCE
+                                                    - INSTANCE MEMBER and STATIC MEMBER
+                                                    - CONSTRUCTORS AND INSTRUCTORS*
 $$
 $$
 
@@ -171,4 +171,11 @@ class Main{
     }
 }
 ```
+### 2022.0
 
+    MUST READ BEFORE NEXT DAY - Definitions of
+            -  < INHERITANCE
+            -  < BENEFITS OF INHERITANCE
+            -  < DIFFERENCE BETWEEN INHERITANCE AND ASSOCIATION
+            -  < MODELS OF INHERITANCE
+$$
