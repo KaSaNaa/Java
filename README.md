@@ -178,3 +178,99 @@ class Main{
             -  < BENEFITS OF INHERITANCE
             -  < DIFFERENCE BETWEEN INHERITANCE AND ASSOCIATION
             -  < MODELS OF INHERITANCE
+
+ ## IS-A Relationship/ Inheritance
+    
+    - Inheritance in Java is the method to create a hierarchy between classes by inheriting from other classes.
+    
+```java
+class Furniture{
+    public void display(){
+        System.out.println("It is a furniture");
+    }
+    public void test(){
+        System.out.println("It is testing");
+    }
+}
+class Chair extends Furniture{
+    //keyword "extends" is used to indicate that a class is inherited from another class.
+
+    //TO BE NOTED: private attributes doesn't get inherited as it is defined under private label and only belongs to the specific class.
+    {
+        
+    }
+}
+class Main{
+    public static void main(String[] args){
+        // now you can call methods in Furniture class to the objects of Chair class.
+        Chair c = new Chair();
+        c.display();
+        c.test();
+    }
+}
+```
+**TIP : The protected keyword in Java refers to one of its access modifiers. The methods or data members declared as protected can be accessed from**
+
+    - Within the same class.
+    - Subclasses of the same packages.
+    - Different classes of the same packages.
+    - Subclasses of different packages.
+
+```java
+class Product{
+    protected float unit_price;
+    public void setPrice(float unit_price){
+        this.unit_price = unit_price;
+    }
+}
+class LocalProdcut extends Product{
+    private float discount_amt;
+    public void setDiscount(float disc_amt);{
+        this.discount_amt = disc_amt;
+    }
+    public void getLastPrice(){
+        System.out.println("Last Price: " + (unit_price - disc_amt));
+    }
+}
+class Main{
+    public static void main(String [] args){
+        LocalProduct lp = new LocalProduct();
+        lp.setPrice(500.0f);
+        lp.setDiscount(100.0f);
+        lp.getLastPrice();
+    }
+}
+```
+
+# Polymorphism 
+
+    - Using one name and doing several tasks ( one name + Many tasks)
+
+    - There are two types of polymorphism in JAVA.
+        1. Runtime Polymorphism (Overriding)
+        2. Compile-Time Polymorphism (Overloading)
+
+ ## 1. Runtime Polymorphism (Overriding)
+    
+```java
+class Item{
+    public void show()
+    {
+        System.out.println("This is an item");
+    }
+} 
+class Computer extends Item{
+    public void show() // method overrriding
+    {
+        System.out.println("This is a computer");
+    }
+}
+class Main{
+    public static void main(String[] args){
+        Computer c1 = new Computer();
+        c1.show();
+    }
+}
+```
+
+
