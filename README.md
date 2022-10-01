@@ -106,6 +106,7 @@ class Main{
     class Computer{
         private String brand;                    
         private static String color = "Black";   // this is a instance member. All objects created in this class can have a copy of this instance.
+        
         public Computer(String brand){          // this is a static member, which means all the objects created under this class shares this same attribute.
         this.brand = brand;
     }
@@ -117,7 +118,7 @@ class Main{
 }
     class Main{
     public static void main(String[] args){
-        Computer x = new Computer("HP);
+        Computer x = new Computer("HP");
         Computer y = new Computer("Dell");
         x.showDetails();
         y.showDetails();
@@ -249,12 +250,19 @@ class Main{
     - There are two types of polymorphism in JAVA.
         1. Runtime Polymorphism (Overriding)
         2. Compile-Time Polymorphism (Overloading)
+<img src= "https://data-flair.training/blogs/wp-content/uploads/sites/2/2018/02/Types-of-Polymorphism-in-Java-1.jpg">
 
- ## 1. Runtime Polymorphism (Overriding)
+ ## 1. Runtime Polymorphism (Method Overriding)
+
+- As the name signifies, method overriding is the process of overriding or redefining a method that was already defined in the parent class.
+
+- This is efficient and useful in many cases because a lot of the time, there is a need for redefining the function based on the class it is in.
+
+- For example, a Mercedes car, which is a subclass of the car class will have a different function named engine in comparison to the BMW car’s engine.
     
 ```java
 class Item{
-    public void show()
+    public void show() // method
     {
         System.out.println("This is an item");
     }
@@ -274,3 +282,32 @@ class Main{
 ```
 
 
+## 2. Compile-time Polymorphism (Method Overloading)
+
+- Method overloading is the process of having the same function name with different arguments. The compiler decides which function to call while compiling the program.
+
+- All of the functions have the same method name but they have different arguments which makes them unique.
+
+- For example, two functions namely area has the same name but one returns the area of a square and the other one returns the area of a rectangle.
+
+```java
+class Student{
+    public void show(){
+        System.out.println("I am a Student");
+    }
+    public void show(int age){
+        System.out.println("My age is " + age);
+    }
+    public void show(int age, double weight){
+        System.out.println("My age is " + age + "My weight is " + weight);
+    }
+}
+class Main{
+    public staic void main(String[] args){
+        Student Nimal = new Student();
+        Nimal.show();
+        Nimal.show(12);
+        Nimal.show(12, 50.2);
+    }
+}
+```
