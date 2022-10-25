@@ -104,10 +104,10 @@ class Main{
 ###  Ex:
 ```java
     class Computer{
-        private String brand;                    
-        private static String color = "Black";   // this is a instance member. All objects created in this class can have a copy of this instance.
+        private String brand;       // this is a instance member. All objects created in this class can have a copy of this instance.             
+        private static String color = "Black";   // this is a static member, which means all the objects created under this class shares this same attribute.
         
-        public Computer(String brand){          // this is a static member, which means all the objects created under this class shares this same attribute.
+        public Computer(String brand){          
         this.brand = brand;
     }
 

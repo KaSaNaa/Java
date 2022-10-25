@@ -2,7 +2,7 @@ package Variables;
 
 
 
-public class variables {
+public class Main {
     public static void main(String[] args) {
 
         // the reason why String variable is in different color is it is not a primitive data type
@@ -20,13 +20,8 @@ public class variables {
 
 
 
-        System.out.println(helloWorld);
-        System.out.println(num2);
-        System.out.println(condition);
-        System.out.println(c);
-        System.out.println(str);
-        System.out.println(tim);
-        System.out.println(x);
+        
+        System.out.println(Math.random());
 
     }
 }

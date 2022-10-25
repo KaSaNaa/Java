@@ -10,9 +10,8 @@ public class Ifconditions {
 
         if (s.equals("tim")) {
             System.out.println("You typed tim");
-        } else if (s.equals("Pasi")) {
-            System.out.println("You entered Pasi.");
-        } else {
+        }
+        else {
             System.out.println("You didn't enter tim.");
         }
 
