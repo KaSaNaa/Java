@@ -125,7 +125,7 @@ class Vanilla extends IceCream {
  * iii. Net profit from that sale.
  */
 
-class Main {
+public class Milkmain {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
