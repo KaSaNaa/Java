@@ -13,8 +13,6 @@ class Milk{
         return price;
     }
 
-    public String getMilkGrade() {
-        return gradeOfMilk;
         
     }
 }
