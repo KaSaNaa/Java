@@ -7,12 +7,19 @@ class Milk {
     protected float price, ltrs, creamQty, totalCost;
     protected char gradeOfMilk;
 
+    private void calculateTotalCost() {
+        totalCost = price * ltrs;
+    }
 
-    float setPrice() {
+    float getPrice() {
         return price;
     }
 
-    float setLtrs() {
+    void setLtrs(float ltrs) { // to get litres of milk from the user
+        this.ltrs = ltrs;
+    }
+
+    float getLtrs() {
         return ltrs;
     }
 
@@ -20,26 +27,24 @@ class Milk {
         return creamQty;
     }
 
-    public float calculateTotalCost() {
+    float getCost() {
         return totalCost;
     }
 
-    public char getMilkGrade() {
+    char getGrade() {
         return gradeOfMilk;
     }
-
-    
 }
 
 class HQmilk extends Milk {
-    /* 
-    needs to make an constructor in order to inherit instances from the parent
-    class
-    */
+    /*
+     * need to make an constructor in order to inherit instances from the parent
+     * class
+     */
     public HQmilk() {
         price = 750; // sets price per litre for the specified milk type
         creamQty = 2; // ice cream qty per milk ltr
-        gradeOfMilk = 'H';
+        gradeOfMilk = 'A';
     }
 }
 
@@ -47,7 +52,7 @@ class MQmilk extends Milk {
     public MQmilk() {
         price = 600;
         creamQty = 1.5f;
-        gradeOfMilk = 'M';
+        gradeOfMilk = 'B';
     }
 }
 
@@ -55,22 +60,32 @@ class LQMilk extends Milk {
     public LQMilk() {
         price = 500;
         creamQty = 1;
-        gradeOfMilk = 'L';
+        gradeOfMilk = 'C';
     }
 }
 
 class IceCream {
     protected char flavour;
-    protected float qty; // Qunatity Made
-    protected float pricePerLtr;
-    protected float totInc;
+    protected float qtyMade, sellingPrice; // Qunatity Made
+    protected float totInc = 0;
+    protected Milk milk;
 
-    float setpricePerltr() {
-        return pricePerLtr;
+    private void calQty() {
+        qtyMade = milk.getLtrs() * milk.getCreamQty();
+
     }
 
-    public float TotalIncome() {
-        return totInc;
+    public void calIncome() {
+        calQty();
+        totInc = qtyMade * sellingPrice;
+
+    }
+
+    public void produceReport(Milk m) {
+        milk = m;
+        calIncome();
+        System.out.println("\t\t-----R e p o r t-----\t\t");
+        System.out.println(null);
     }
 
 }
@@ -97,12 +112,13 @@ class Strawberry extends IceCream {
         flavour = 'S';
     }
 }
+
 /*
  * Take milk quantity bought, grade of milk and the flavor of ice-cream as
  * inputs and Calculate
-    *               i. The total expenses of the company for that sale,
-    *               ii. Total Income company obtained by that sale
-    *               iii. Net profit from that sale.
+ * i. The total expenses of the company for that sale,
+ * ii. Total Income company obtained by that sale
+ * iii. Net profit from that sale.
  */
 
 class Main {

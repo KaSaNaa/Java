@@ -6,16 +6,17 @@
 
 ## What is OOP?
 -Writing programs to represent real world entities.
-eg: C cannot represent real world objects. It only supports to represent behaviours/tasks. (can only write functions)
-        -Java
-        -Python
-        -C#
-        -C++
-        -Kotlin
+- Eg: C cannot represent real world objects. It only supports to represent behaviours/tasks. (can only write functions)
+    1. Java
+    2. Python
+    3. Kotlin
+    4. C#
+    5. C++
+    
 
 - once the installation is done, there will be 2 folders inside the Java Folder.
-        JDK--> Java Development Kit (contains development and Debugging Tools)
-        JRE--> Java Runtime Environment (provides the environment for the application to run. contains Java Virtual Machine, which supports to run the application)
+    - JDK 🔜 Java Development Kit (contains development and Debugging Tools)
+    - JRE 🔜 Java Runtime Environment (provides the environment for the application to run. contains Java Virtual Machine, which supports to run the application)
 
 ## JAVA
 - Intructions/codes are written on notepad
